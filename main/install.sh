@@ -10,20 +10,20 @@ NC='\033[0m'
 # Display welcome message
 display_welcome() {
   echo -e ""
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © SKYZOPEDIA                [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${RED}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]================================================[+]${NC}"
+  echo -e "${BLUE}[+]                                                [+]${NC}"
+  echo -e "${BLUE}[+]                AUTO INSTALLER THEMA            [+]${NC}"
+  echo -e "${BLUE}[+]                  © LYLIAOWNER                  [+]${NC}"
+  echo -e "${BLUE}[+]                                                [+]${NC}"
+  echo -e "${BLUE}[+]================================================[+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
   echo -e "Dilarang Keras Share Bebas."
   echo -e ""
   echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
-  echo -e "@skyzodev"
+  echo -e "@rftzxyuuu"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@skyzopedia"
+  echo -e "@eraxlylia.my.id"
   sleep 4
   clear
 }
@@ -31,21 +31,21 @@ display_welcome() {
 #Update and install jq
 install_jq() {
   echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+] ================================================[+]${NC}"
   echo -e "${BLUE}[+]             UPDATE & INSTALL JQ                 [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+] ================================================[+]${NC}"
   echo -e "                                                       "
   sudo apt update && sudo apt install -y jq
   if [ $? -eq 0 ]; then
     echo -e "                                                       "
-    echo -e "${GREEN}[+] =============================================== [+]${NC}"
+    echo -e "${GREEN}[+] ================================================[+]${NC}"
     echo -e "${GREEN}[+]              INSTALL JQ BERHASIL                [+]${NC}"
-    echo -e "${GREEN}[+] =============================================== [+]${NC}"
+    echo -e "${GREEN}[+] ================================================[+]${NC}"
   else
     echo -e "                                                       "
-    echo -e "${RED}[+] =============================================== [+]${NC}"
+    echo -e "${RED}[+] ================================================[+]${NC}"
     echo -e "${RED}[+]              INSTALL JQ GAGAL                   [+]${NC}"
-    echo -e "${RED}[+] =============================================== [+]${NC}"
+    echo -e "${RED}[+] ================================================[+]${NC}"
     exit 1
   fi
   echo -e "                                                       "
@@ -55,17 +55,17 @@ install_jq() {
 #Check user token
 check_token() {
   echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY RAFATHAR CODE            [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+] ================================================[+]${NC}"
+  echo -e "${BLUE}[+]               TOKEN LICENSI LYLIA               [+]${NC}"
+  echo -e "${BLUE}[+] ================================================[+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "skyzodev" ]; then
+  if [ "$USER_TOKEN" = "lylia" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
-    echo -e "${GREEN}Token Salah! Beli Kode Token Di Skyzopedia${NC}"
+    echo -e "${GREEN}Token Salah! Beli Kode Token Di Lylia${NC}"
     echo -e "${YELLOW}TELEGRAM : @skyzodev${NC}"
     echo -e "${YELLOW}WHATSAPP : +6285624297893${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
